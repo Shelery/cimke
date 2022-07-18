@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Címke</title>
+  <style> 
+    body {
+      background-image: url(https://vasarely.hu/data/cikkek/123/1231/cikk-123132/MOD_V.253_kicsi_2.96MB_fill_1200x900.jpg);
+      background-attachment: fixed;
+      margin:0px 30px
+    }
+    h1 {
+  
+      text-align: center;
+      font-family: Playfair Display;
+      font-style: italic;
+   
+      font-size: 100px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+
+      color: #FFFAFA;
+
+      text-shadow: 4px 4px 1px #000000;
+      margin: 200px auto 50px auto;
+     
+    }
+    .explanation {
+      text-align:left;
+      max-width: 400px;
+      
+      font-style: italic;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 20px;
+      margin: 0 auto 400px;
+      background: #FFFAFA;
+      border-radius: 20px;
+      padding: 20px ;
+      box-shadow: 10px 10px 1px 4px rgba(19,23,22, 0.9);
+
+      letter-spacing: 0.15em;
+      text-transform: lowercase;
+
+      color: #6b4d4d;
+    }
+    .lil-guy{
+      margin: 0 auto 300px;
+      max-width: 800px;
+      
+    }
+
+    .introduction {
+      margin: 0px auto;
+      font-family: Space Mono;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 20px;
+      letter-spacing: 0.04em;
+      max-width: 600px;
+
+      color: #F5F4F5;
+      padding:30px;
+      background-color: #313f77;
+      box-shadow: 7px 7px 6px 4px rgba(0, 0, 0, 0.6);
+      border-radius: 25px;
+
+    }
+    .waving {
+      margin:0 auto;
+      border-radius: 170px;
+       box-shadow: 7px 7px 6px 4px rgba(0, 0, 0, 0.6);
+       float: right;
+       max-width: 400px;
+       padding:10px
+    }
+
+
+    .article {
+      
+      background-color:#F3F5F5;
+      
+      border-radius: 25px;
+      box-shadow: 0px 5px 4px 4px  rgba(0,0,0, 0.3);
+      padding: 30px;
+      margin: 30px auto;
+      max-width: 1000px;
+
+        display:flex ;
+        align-items: flex-start;
+        justify-content: flex-start;
+      
+    }
+      .article-pic {
+        border-radius: 20px;
+        max-width: 100%;
+       
+      }
+      .article-text {
+        margin: 0px 0px 0px 30px;
+        cursor:default
+      }
+      .questions {
+        margin: 0 auto;
+        font-family: Space Mono;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 23px;
+        line-height: 20px;
+
+        letter-spacing: -0.05em; 
+        color: #000000;
+      }
+      hr{
+        margin: 18px auto
+      }
+      h3 {
+        display:inline;
+       
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 15px;
+
+        letter-spacing: -0.05em;
+
+        color: #000000;
+      }
+
+      .ethimology{
+        font-size: 15px;
+        font-weight: lighter;
+        opacity: 0;
+        transition: all 150ms ease-out;
+        padding: 100px 0px 100px 0px
+        
+      }
+      .ethimology:hover{
+        opacity:1;
+       
+      }
+      
+      .description {
+        font-family: Space Mono;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 20px;
+        margin: 2px 0px 0px 0px;
+       
+
+        letter-spacing: -0.01em;
+
+        color: #000000;
+
+      }
+   
+      button{
+      display:block;
+      margin: 0px auto;
+      margin: 20px auto;
+      padding: 15px;
+      border-color:#4351aa;
+      border-width: 3px;
+      font-family: Playfair Display;
+       
+      font-weight: bold;
+      font-size: 25px;
+ 
+      letter-spacing: 0.02em; 
+      max-width: 300px;
+
+      color: #F5F4F5;
+     
+      background-color: #4351aa;
+      box-shadow: 7px 7px 6px 4px rgba(0, 0, 0, 0.6);
+      border-radius: 25px;
+      transition: all 150ms ease-in;
+      cursor:pointer
+      }
+      button:hover {
+        background-color: #170F35;
+        text-shadow: 7px 7px 6px 4px rgba(0, 0, 0, 0.6);
+        border-color:#170F35 ;
+      }
+      .contact-card{
+        font-family:monospace;
+        color:#F5F4F5;
+        text-align:right;
+        background-color: rgb(182, 17, 41, 0.5);
+        max-width: 300px;
+        float:right;
+        padding: 15px 15px 5px;
+        border-radius: 25px;
+        border-bottom-left-radius:0px ;
+        border-bottom-right-radius: 0px;
+        box-shadow: 7px -7px 6px 4px rgba(0, 0, 0, 0.6);
+      
+      }
+      ul{
+      padding-inline-start: 0;
+      margin:0px
+      }
+      li {
+        display:inline
+      }
+      a:hover {
+        text-decoration:underline;
+      }
+      a{
+        color:#F5F4F5;
+        text-decoration: none;
+      }
+      
+  </style>
+</head>
+<body>
+  <h1>
+    Címke
+  </h1>
+  
+    <p class="explanation">
+      /ʦiːmkɛ/ (Hungarian, original meaning: label) </br> <br>
+      (n.) category of words created by the citizens of Internet-land
+       (internet népe) to describe feeling, everyday situations that
+        everyone knows, yet we don’t have words for them.
+    </p>
+    <div class="lil-guy">
+      <img class="waving" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/010/095/original/profilk%C3%A9pke.PNG?1622749632" > 
+      <p class="introduction"><strong>Hey there! <br>  I am Eszter </strong> 
+        (with a Z - but don’t let it distract you,
+        it is pronounced Ester). <br> <br>
+        My mother tongue is <strong> Hungarian</strong>, but I also speak
+         <strong> English, Italian and some German.</strong> <br>
+        I am fascinated by the diverse vocabulary of different languages. 
+        They showed me how colourful the human mind is, still how similar all 
+        around the globe. <br> <br>
+        They say languages are energy saving but I doubt it. <strong>
+        There are so many
+        everyday situations that we simply have no words for. </strong> <br>
+        To fill the void my friends and I have made up some new word that we
+        think should be used daily. <br><br> <strong> Check them
+         out and help us to diffuse them!</strong>
+      </p>
+     </div>
+   
+    <div class= "article réj">
+      <img class="article-pic réj-pic" src="https://i.pinimg.com/236x/82/1b/86/821b866617ea8ac60b236c777b8de4aa.jpg" >  
+      <span class="article-text">
+        <p class="questions">
+          Have you ever felt like you had known something but just by
+          saying it out you became more conscious about it?
+        </p>
+        <hr>
+        <h3>
+          a réj 
+          <h3 class="ethimology"> 
+          ɾeːj <br>
+          régi + új = old + new
+          </h3>
+        </h3>
+        <p class="description">
+             Humankind tends to preceive entities better once they are labelled. <br>
+          Creating verbal connection to certain feelings and situations help 
+          you recognise them in different contexts, so you’ll be more conscious
+            about them. <br>
+             
+           <em> E.g. some decades ago there were only two genders. Now that new 
+          categories are being introduced non-binary people can find their 
+          identity easier. <br>
+             But also, when you have a difficult time, sometimes it’s enough if 
+          someone just listens to you and you realize you found the solution by 
+          yourself. That’s because the cognitive effort to put your feeling in 
+          words requires you to clarify your thoughts.</em> <br>
+             To sum up, if you have some recurrent feelings but no words for it,
+            you might not even realize you have it. <br>
+              Réj is the moment, when by saying something out or hearing someone
+            saying it out helps you to enlighten your inside-kept thought. So 
+            it will be something that you have already known – so it is an old
+              (régi) tought but in a new (új) light.
+        </p>
+      </span>
+    </div>
+
+    <div class="article tüppen"> 
+      <img class="article-pic" src="https://i.pinimg.com/236x/3b/60/3a/3b603a1e9894cc151f6b6a91fecf7f49.jpg" >  
+     <span class="article-text">
+        <p class="questions">Have you ever found yourself doing an awkward 
+          dance with a stranger while trying to pass by each other?</p>
+        <hr>
+        <h3>
+          to tüppen <h3 class="ethimology">
+            tʏpːɛn <br>
+            tükrözni + tipegni = to reflect + toddle
+            </h3>
+        </h3>
+        <p class="description">
+          Two people tüppen, when they are going to the opposite directions 
+          and their roads are crossing each other so they try to pass by each
+          other by stepping aside, but they accidentally step to the same sid
+            (they reflect each other) and then repeat it variable times creating
+            toddler-like movement. 
+        </p>
+    </span>
+    </div>
+
+    <div class="article várdés">
+      <img class="article-pic" src="https://i.pinimg.com/236x/08/3c/4b/083c4bd31816f3f1736500ce59fcea5e.jpg" > 
+      <span class="article-text">
+        <p class="questions">	Have you ever asked someone about their 
+          weekend hoping that they ask back, so actually you can talk about
+          yours?</p>
+        <hr>
+        <h3>
+          a várdés <h3 class="ethimology">
+            vaːɾdeːʃ <br>
+            válasz + kérdés = answer + question (+twist:  to vár = to wait)
+            </h3>
+        </h3>
+        <p class="description">
+          A várdés is a question that you ask from someone else because you
+          hope they’ll answer it shortly and then ask it back. Because in 
+          fact, you are the one willing to answer your own question. <br>
+          It might include the disappointment when they don’t do so. <br>
+            So, to explain the word chosen for this kind of questions, you
+             already have an answer (válasz) so you ask them a question 
+             (kérdés) waiting (vár) for them to ask back.
+        </p> 
+    </span>
+    </div> 
+
+    <div class="article kk-reflex">
+      <img class="article-pic" src="https://i.pinimg.com/236x/d0/9d/9e/d09d9e2f0c4804a5881ed4aa1e1200c4.jpg" > 
+      <span class="article-text">
+        <p class="questions">Have you ever felt like some celebrity was so
+          hyped by everyone for no reason that you just started hated him/her?</p>
+        <hr>
+        <h3>
+          KK reflex <h3 class="ethimology"> 
+            just simply keɪ-keɪ ˈriːflɛks 
+             <br>
+            Közvélemény-kiegyenlítő reflex = public opinion compensating reflex
+
+          </h3>
+        </h3>
+        <p class="description">
+          When you feel like the public perception about a certain entity
+            (celebrity, film, political decision, etc.) doesn’t correspond to
+            its deserved one. <br>
+            KK reflex is when, in order to compensate the public perception,
+            you modify your personal opinion so that the “geometric mean” of
+              these “two perceptions” gives the desired result. <br>
+              You can either <br>
+             <em>  radicalize your opinion (you start blaming that celebrity,
+              emphasize his/her flaws)</em> <br>
+                or <br>
+               <em> Moderate it (you start saying like “s/he is not that bad”,
+                sympathize with them).</em>
+        </p>
+      </span>
+    </div>
+
+    <div class="article yourOwn">
+      <img class= "article-pic" src="https://i.pinimg.com/236x/10/e2/9d/10e29d5b1999392189bf1f76d9c2b0a1.jpg">
+      <span class="article-text">
+        <p class="questions ownQuestion">Have you ever made up or wanted to make up a new 
+          word?</p>
+        <hr>
+        <h3 class="ownCímke">
+          Click the button below!
+        </h3>
+        <p class="description ownDescription">
+
+        </p>
+      </span>
+    </div>
+      
+ 
+  <button>
+    <em>Create your own </em> Címke!
+  </button>
+  
+  <div class="contact-card">
+    coded by Eszter (with a Z) <br> <br>
+
+    Check out the creators of the pictures! <br>
+    <ul>
+      <li>
+        <a href="https://closerandcloser.co/ahra-kwon/" target="_blank">
+          réj</a>
+      </li>
+      <li>
+        <a href="https://society6.com/swanderfulthings" target="_blank">
+          tüppen</a>
+      </li><li>
+        <a href="https://www.synergyart.co.uk/artists/tommy-parker" target="_blank">
+          várdés</a>
+      </li ><li class="no-link">
+        kk-reflex
+      </li><li>
+        <a href="https://vasarely.hu/eng" target="_blank">
+          background </a>
+      </li>
+    </ul>
+
+         
+
+  </p>
+  <script>
+    function createCímke(){
+      let description1 = prompt("I heard you have some thoughts in your mind but no wide-spread name for it!🐣 Write its meaning here so that we can add it to our collection!😉")
+      let címke1 = prompt("If you already have a name for it, write it here! If no, click on OK!")
+      
+
+      let question = document.querySelector(".ownQuestion");
+      let címke = document.querySelector(".ownCímke");
+      let description = document.querySelector(".ownDescription");
+      if (címke1.length > 0){
+        alert("Thank you for contribuiting to our collection! From now on you have your own Címke, too. 😊Let's check it out!")
+      } else {
+      alert("No problem! Our group will find the perfect name for it!")
+      } 
+
+       question.innerHTML = "Have you ever seen your own invention on a website? Here it is!";
+        címke.innerHTML = címke1;
+        description.innerHTML=description1;
+    }
+
+    let button = document.querySelector("button")
+    button.addEventListener("click", createCímke)
+    function noLinkF() {
+      alert("Sorry! I couldn't find this artist's profile!😔")
+    }
+
+    let noLink = document.querySelector(".no-link")
+    noLink.addEventListener("click", noLinkF)
+  </script>
+</body>
+</html>
